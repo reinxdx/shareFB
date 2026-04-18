@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+<button class="burger" onclick="toggleMenu()">☰</button>
+<div class="brand">FB SHAREX</div>
+</div>
+
+<div id="menu" class="sidebar hide">
+<div class="menuTitle">MENU</div>
+<button onclick="closeMenu()">Home</button>
+<button onclick="saveCookie()">Save Cookie</button>
+<button onclick="aboutApp()">About</button>
+</div>
+
+<div class="wrap">
+
+<h1>Facebook Share Tool</h1>
+
+<input id="cookie" placeholder="Facebook Cookie">
+<input id="link" placeholder="Post Link">
+<input id="limit" placeholder="Share Limit">
+
+<button class="shareBtn" onclick="runShare()">START SHARE</button>
+
+<div id="status" class="status hide"></div>
+<div id="logs" class="logs hide"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
